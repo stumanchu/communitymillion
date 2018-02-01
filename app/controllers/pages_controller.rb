@@ -11,4 +11,8 @@ class PagesController < ApplicationController
  def donate
      
  end
+ 
+ def faq
+ 
+ end
 end
