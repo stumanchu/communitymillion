@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   get 'about', to: 'pages#about'
   get 'donate', to: 'pages#donate'
   get 'faq', to: 'pages#faq'
+  get 'signup', to: 'users#new'
+  resources :users, except: [:new]
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
